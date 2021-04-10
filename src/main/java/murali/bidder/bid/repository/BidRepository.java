@@ -8,4 +8,6 @@ import murali.bidder.bid.entity.Bid;
 @Repository
 public interface BidRepository  extends CassandraRepository<Bid, String>{
 
+	public Bid findByBid(String bid);
+
 }
